@@ -21,12 +21,49 @@
     <main>
       <section>
         <h2 class="visually-hidden">Фильтр поиска гостиницы</h2>
-        <ul>
-          <li>Инфраструктура:</li>
-          <li>Тип жилья:</li>
-          <li>Стоимость в сутки (Р):</li>
-        </ul>
-        <button type="button">Показать</button>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="pool" id="pool" checked>
+                <label for="pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" id="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wi-fi" id="wi-fi">
+                <label for="wi-fi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="hotel-type" id="hotel-type" checked>
+                <label for="hotel-type">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="motel-type" id="motel-type" checked>
+                <label for="motel-type">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="aparts-type" id="aparts-type" checked>
+                <label for="aparts-type">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <p>
+              от 0<input type="range" min="0" max="3000" step="100" id="cost">до 3000
+            </p>
+          </fieldset>
+        <button type="submit">Показать</button>
+      </form>
         <h3>Найдено: 3</h3>
         <h4>Сортировка</h4>
          <ul>
