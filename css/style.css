@@ -100,6 +100,61 @@ img {
     text-align: center;
   }
 
+  .features-list {
+    list-style: none;
+  }
+
+  .features-item {
+    text-align: center;
+  }
+
+  .features-item h3 {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+  }
+
+  .features-item:nth-child(-n+2) {
+    color: var(--basic-white);
+    background-color: var(--basic-blue);
+  }
+
+  .feature-details {
+    background-color: var(--basic-white);
+    color: var(--basic-black);
+  }
+
+  .feature-datails-list {
+    list-style: none;
+  }
+
+  .feature-datails-item h4 {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+  }
+
+
+  .living-detail {
+    background-image: url(../img/icon-1.svg);
+    background-repeat: no-repeat;
+  }
+
+  .food-detail {
+    background-image: url(../img/icon-2.svg);
+    background-repeat: no-repeat;
+  }
+
+  .souvenir-detail {
+    background-image: url(../img/icon-3.svg);
+    background-repeat: no-repeat;
+  }
+
+  .features-item:nth-child(n+3) {
+    color: var(--basic-black);
+    background-color: var(--basic-beige);
+  }
+
   .hotel-searching h2 {
     font-weight: bold;
     font-size: 30px;
@@ -120,6 +175,7 @@ img {
     vertical-align: middle;
     text-transform: uppercase;
     border: none;
+    background-color: transparent;
   }
 
   .start-searching-button {
@@ -196,6 +252,89 @@ img {
 
   .copyright-button:active svg {
     fill: var(--light-grey);
+  }
+
+  .filters {
+    background-image: url(../img/background-blur.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .filter-title {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .filters ul {
+    list-style: none;
+  }
+
+  .filter-input-checkbox:disabled + label {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .filter-button {
+    font-weight: normal;
+  }
+
+  .filter-button:hover,
+  .filter-button:focus {
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+  }
+
+  .searching-results h3 {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .sorting h4 {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .sorting ul {
+    list-style: none;
+  }
+
+  .sort-item-button {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .sort-item-button:hover,
+  .sort-item-button:focus {
+    color: var(--basic-blue);
+  }
+
+  .sort-item-button:active {
+    color: var(--basic-black);
+  }
+
+  .sorting .current-sort {
+    color: var(--basic-blue);
+  }
+
+  .sort-way svg {
+    fill: #CACACA;
+  }
+
+  .sort-way:hover svg,
+  .sort-way:focus svg {
+    fill: var(--basic-black);
+  }
+
+  .sort-way:active svg {
+    fill: var(--basic-blue);
+  }
+
+  .current-way svg {
+    fill: var(--basic-blue);
   }
 
   .catalog-list {

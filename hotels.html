@@ -31,15 +31,15 @@
             <legend class="filter-title">Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
-                <input type="checkbox" name="pool" id="pool" checked>
+                <input class="filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
                 <label for="pool">Бассейн</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" name="parking" id="parking">
+                <input class="filter-input-checkbox" type="checkbox" name="parking" id="parking">
                 <label for="parking">Парковка</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" name="wi-fi" id="wi-fi">
+                <input class="filter-input-checkbox" type="checkbox" name="wi-fi" id="wi-fi">
                 <label for="wi-fi">Wi-Fi</label>
               </li>
             </ul>
@@ -48,15 +48,15 @@
             <legend class="filter-title">Тип жилья:</legend>
             <ul>
               <li class="filter-option">
-                <input type="checkbox" name="hotel-type" id="hotel-type" checked>
+                <input class="filter-input-checkbox" type="checkbox" name="hotel-type" id="hotel-type" checked>
                 <label for="hotel-type">Гостиница</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" name="motel-type" id="motel-type" checked>
+                <input class="filter-input-checkbox" type="checkbox" name="motel-type" id="motel-type" checked>
                 <label for="motel-type">Мотель</label>
               </li>
               <li class="filter-option">
-                <input type="checkbox" name="aparts-type" id="aparts-type" checked>
+                <input class="filter-input-checkbox" type="checkbox" name="aparts-type" id="aparts-type" checked>
                 <label for="aparts-type">Апартаменты</label>
               </li>
             </ul>
@@ -67,21 +67,26 @@
               от 0<input type="range" min="0" max="3000" step="100" id="cost">до 3000
             </p>
           </fieldset>
-        <button type="submit">Показать</button>
+        <button class="button filter-button" type="submit">Показать</button>
        </form>
       </section>
       <section class="searching-results">
         <h2 class="visually-hidden">Результаты поиска гостиницы</h2>
         <h3>Найдено: 3</h3>
-        <section class="sorting-results">
+        <section class="sorting">
          <h4>Сортировка</h4>
           <ul>
-           <li><button class="sort-item-button" type="button">По цене</button></li>
-           <li><button class="sort-item-button" type="button">По типу</button></li>
-           <li><button class="sort-item-button" type="button">По рейтингу</button></li>
+           <li><button class="button sort-item-button current-sort" type="button">По цене</button></li>
+           <li><button class="button sort-item-button" type="button">По типу</button></li>
+           <li><button class="button sort-item-button" type="button">По рейтингу</button></li>
          </ul>
-         <button class="sort-way" type="button" disabled>Вверх</button>
-         <button class="sort-way" type="button">Вниз</button>
+         <button class="button sort-way" type="button">
+           <span class="visually-hidden">Вверх</span>
+           <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10h11L5.5 0z"/></svg>
+         </button>
+         <button class="button sort-way current-way" type="button">
+           <span class="visually-hidden">Вниз</span>
+           <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L0 0h11"/></svg></button>
         </section>
       </section>
       <section class="catalog">
