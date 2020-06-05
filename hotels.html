@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-   <div class="white-back">
     <header class="main-header">
       <nav class="main-nav">
         <a class="main-header-logo" href="index.html"> 
@@ -70,11 +69,11 @@
         <button class="button filter-button" type="submit">Показать</button>
        </form>
       </section>
-      <section class="searching-results">
+      <section class="sorting-results">
         <h2 class="visually-hidden">Результаты поиска гостиницы</h2>
         <h3>Найдено: 3</h3>
         <section class="sorting">
-         <h4>Сортировка</h4>
+         <h4>Сортировка:</h4>
           <ul>
            <li><button class="button sort-item-button current-sort" type="button">По цене</button></li>
            <li><button class="button sort-item-button" type="button">По типу</button></li>
@@ -93,6 +92,7 @@
         <h2 class="visually-hidden">Список гостиниц</h2>
           <ul class="catalog-list">
               <li class="catalog-item"> 
+                <div class="flex-container-info">
                 <a class="catalog-item-title" href="#">
                     <h3>Amara Resort & Spa</h3>
                     <p class="catalog-item-image">
@@ -103,6 +103,8 @@
                 <p class-="catalog-item-price">от 4000 Р.</p>
                 <a class="button catalog-item-info" href="blank.html">Подробнее</a>
                 <button class="button catalog-item-booking" type="button">Забронировать</button>
+              </div>
+              <div class="flex-container-rating">
                 <span class="catalog-item-stars">
                   <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z" fill="#81B3D2"/></svg>
                   <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z" fill="#81B3D2"/></svg>
@@ -110,8 +112,10 @@
                   <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z" fill="#81B3D2"/></svg>
                 </span>
                 <p class="catalog-item-rating">Рейтинг: 8,5</p>
+              </div>
               </li>
               <li class="catalog-item"> 
+                <div class="flex-container-info">
                 <a class="catalog-item-title" href="#">
                     <h3>Desert Quail Inn</h3>
                     <p class="catalog-item-image">
@@ -122,14 +126,18 @@
                 <p class-="catalog-item-price">от 3000 Р.</p>
                 <a class="button catalog-item-info" href="blank.html">Подробнее</a>
                 <button class="button catalog-item-booking" type="button">Забронировать</button>
+              </div>
+              <div class="flex-container-rating">
                 <span class="catalog-item-stars">
                   <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z" fill="#81B3D2"/></svg>
                   <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z" fill="#81B3D2"/></svg>
                   <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z" fill="#81B3D2"/></svg>
                 </span>
                 <p class="catalog-item-rating">Рейтинг: 8,9</p>
+              </div>
               </li>
               <li class="catalog-item"> 
+                <div class="flex-container-info">
                 <a class="catalog-item-title" href="#">
                     <h3>Villas at Poco Diablo</h3>
                     <p class="catalog-item-image">
@@ -140,16 +148,19 @@
                 <p class-="catalog-item-price">от 2000 Р.</p>
                 <a class="button catalog-item-info" href="blank.html">Подробнее</a>
                 <button class="button catalog-item-booking" type="button">Забронировать</button>
+              </div>
+              <div class="flex-container-rating">
                 <span class="catalog-item-stars">
                   <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z" fill="#81B3D2"/></svg>
                   <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878L9.002 0z" fill="#81B3D2"/></svg>
                 </span>
                 <p class="catalog-item-rating">Рейтинг: 9,2</p>
+              </div>
               </li>
           </ul>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="main-footer">
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <p>#visitsedona<br>
@@ -186,7 +197,5 @@
         </a>
       </p>
     </footer>
-
-    </div>
   </body>
 </html>
