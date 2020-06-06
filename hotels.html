@@ -26,7 +26,8 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр поиска гостиницы</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
+          <div class="filter-grid-container">
+          <fieldset class="infrastructure-filter">
             <legend class="filter-title">Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
@@ -43,7 +44,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="hotel-type-filter">
             <legend class="filter-title">Тип жилья:</legend>
             <ul>
               <li class="filter-option">
@@ -60,12 +61,13 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="cost-filter">
             <legend class="filter-title">Стоимость в сутки (Р):</legend>
             <p>
               от 0<input type="range" min="0" max="3000" step="100" id="cost">до 3000
             </p>
           </fieldset>
+        </div>
         <button class="button filter-button" type="submit">Показать</button>
        </form>
       </section>
