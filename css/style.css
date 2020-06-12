@@ -61,7 +61,7 @@ html {
   }
 
 .main-header {
-    height: 55px;
+    height: 56px;
   }
 
 .main-header-logo {
@@ -83,19 +83,20 @@ html {
   .main-nav-list {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     margin: 0;
     padding: 0;
-    padding-left: 73px;
-    padding-right: 73px;
+    padding-left: 72px;
+    padding-right: 72px;
     height: 100%;
 
   }
 
   .main-nav-item:nth-child(1) {
     text-align: left;
-    width: 227px;
+    width: 228px;
   }
 
   .main-nav-item:nth-child(2) {
@@ -105,7 +106,7 @@ html {
 
   .main-nav-item:nth-child(3) {
     text-align: right;
-    width: 300px;
+    width: 301px;
   }
 
   .main-nav-item:nth-child(4) {
@@ -115,6 +116,7 @@ html {
 
   .main-nav-list a {
     color: var(--basic-black);
+    display: block;
   }
 
   .main-nav-list a:hover,
@@ -140,10 +142,10 @@ html {
   .intro img {
     display: block;
     padding: 0;
-    padding-left: 371px;
-    padding-right: 371px;
-    padding-top: 77px;
-    padding-bottom: 81px;
+    padding-left: 371.38px;
+    padding-right: 371.96px;
+    padding-top: 77.35px;
+    padding-bottom: 80.76px;
   }
 
   .features {
@@ -156,20 +158,22 @@ html {
     font-size: 21px;
     line-height: 26px;
     text-align: center;
-    margin: 0;
-    margin-bottom: 50px;
+    width: 470px;
+    margin: 0 auto;
+    margin-bottom: 43px;
   }
 
   .features-intro p {
     line-height: 26px;
     text-align: center;
     margin: 0;
-    margin-bottom: 50px;
+  
   }
 
   .features-list {
     list-style: none;
     margin: 0;
+    margin-top: 51px;
     padding: 0;
   }
 
@@ -182,13 +186,14 @@ html {
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
+    width: 149.5px;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    margin-bottom: 26px;
   }
 
   .features-item p {
     padding: 0;
-    padding-top: 30px;
     margin: 0 10px;
 
   }
@@ -197,6 +202,7 @@ html {
     color: var(--basic-white);
     background-color: var(--basic-blue);
     padding: 45px;
+    padding-top: 47px;
   }
 
   .first-feature-grid {
@@ -268,7 +274,6 @@ html {
     padding: 45px;
   }
 
-  
 
   .hotel-searching h2 {
     font-weight: bold;
@@ -283,8 +288,8 @@ html {
     line-height: 24px;
     text-align: center;
     margin: 0;
-    margin-top: 35px;
-    margin-bottom: 50px;
+    margin-top: 31px;
+    margin-bottom: 45px;
   }
 
   .button {
@@ -297,6 +302,7 @@ html {
     text-transform: uppercase;
     border: none;
     background-color: transparent;
+    outline: none;
   }
 
   .start-searching-button {
@@ -305,6 +311,7 @@ html {
     font-size: 21px;
     line-height: 26px;
     margin: 0 auto;
+    padding: 30px 140px;
   }
 
   .start-searching-button:hover,
@@ -319,34 +326,127 @@ html {
 
   .hotel-searching img {
     margin: 0;
-    margin-bottom: -120px;
+    margin-bottom: -126px;
+  }
+
+  .modal {
+    width: 568px;
   }
 
   .searching-form {
-    display: none;
+    padding: 55px;
+    background-color: var(--basic-white);
+    font-weight: bold;
+    line-height: 26px;
+
   }
 
-  .main-footer {
-    padding: 20px 73px;
+  .searching-item {
+    width: 458px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 29px;
+   
+  }
+
+
+  .guests-amount {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .searching-form p {
+    margin: 0;
+    }
+
+  .searching-item input {
+    width: 346px;
+    color: var(--basic-black);
+    font: inherit;
+    text-transform: uppercase;
+    line-height: 18px;
+    font-weight: bold;
+    background-color: var(--main-background);
+    border: none;
+    padding: 10px 13px;
+    box-sizing: border-box;
+  }
+
+  .searching-item input:hover {
+    background-color: var(--dark-beige);
+  }
+
+  .searching-item input:focus {
+    background-color: var(--basic-white);
+    border: 2px solid #E5E5E5;
+    outline: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+
+  .guests-amount input {
+    width: 114px;
+    text-align: center;
+  }
+
+
+  .adults {
+    padding-right: 37px;
+  }
+
+  .kids {
+    padding-right: 25px;
+  }
+  
+
+ .submit-searching-button {
+    background-color: var(--basic-blue);
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
+    margin-top: 25px;
+    width: 458px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.submit-searching-button:hover,
+.submit-searching-button:focus {
+  background-color: var(--dark-blue);
+}
+
+.submit-searching-button:active {
+  background-color: var(--extra-dark-blue);
+  color: rgba(255, 255, 255, 0.3); 
+}
+
+.main-footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-  }
+}
 
-  .footer-filter {
+.footer-filter {
     background-color: rgba(255, 255, 255, 0.9);
-  }
+}
 
-  .footer-contacts {
+.footer-contacts {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     text-align: center;
     margin: 0;
     width: 320px;
+    padding-top: 23px;
+    padding-left: 76px;
+
   }
 
   .footer-contacts p {
     margin: 0;
+    padding-bottom: 9px;
   }
 
 
@@ -354,10 +454,16 @@ html {
     text-align: center;
     width: 150px;
     justify-self: center;
+    vertical-align: middle;
+    padding-top: 36px;
+    padding-bottom: 36px;
 
   }
 
   .footer-social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     list-style: none;
     padding: 0;
     margin: 0 auto;
@@ -368,7 +474,9 @@ html {
     background-color: var(--basic-blue);
     width: 46px;
     height: 48px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .social-button:hover,
@@ -386,16 +494,22 @@ html {
   }
 
   .footer-copyright {
-    line-height: 26px;
-    text-align: center;
-    vertical-align: middle;
-    margin: 0 auto;
-    max-width: 250px;
-    justify-self: end;
+    display: flex;
+    padding-left: 65px;
+    padding-top: 38px;
   }
+
+  .footer-copyright p {
+    line-height: 26px;
+    margin: 0;
+    padding-top: 11px;
+    padding-right: 8px;
+  }
+
 
   .copyright-button svg {
     fill: var(--basic-black);
+
   }
   .copyright-button:hover svg,
   .copyright-button:focus svg{
@@ -551,26 +665,32 @@ html {
 
   .catalog-list {
     list-style: none;
-    padding: 0 73px;
     margin: 0;
+    padding: 0;
   }
 
   .catalog-item {
     padding: 0;
-    padding-left: 164px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-left: 237px;
+    padding-right: 73px;
+    padding-top: 25px;
+    padding-bottom: 14px;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 110px;
+    border-top: 1px solid var(--extra-light-grey)
+  }
+
+  .catalog-item:last-child {
+    border-bottom: 1px solid var(--extra-light-grey)
   }
 
   .catalog-item-image {
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 30px;
-    left: 0;
+    top: 25px;
+    left: 73px;
   }
 
 
@@ -593,11 +713,33 @@ html {
     opacity: 0.3;
   }
 
+  .grid-container-info p {
+    margin: 0;
+    padding-top: 5px;
+  }
+
+  .inner-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 258px;
+    margin-bottom: 16px;
+  }
+
+  .inner-column-left {
+    width: 110px;
+  }
+
+  .inner-column-right {
+    width: 142px;
+  }
+
   .catalog-item-info {
     background-color: var(--basic-blue);
     font-weight: bold;
     font-size: 14px;
     line-height: 21px;
+    padding: 3px 17px;
+    padding-right: 16px;
   }
 
   .catalog-item-info:hover,
@@ -615,6 +757,8 @@ html {
     font-weight: bold;
     font-size: 14px;
     line-height: 21px;
+    padding: 3px 17px;
+    padding-left: 16px;
   }
 
   .catalog-item-booking:hover,
@@ -627,23 +771,27 @@ html {
     color: rgba(255, 255, 255, 0.3);
   }
 
-  .flex-container-rating {
-    height: 90px;
+  .grid-container-rating {
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
+    padding-top: 3px;
+    padding-bottom: 16px;
     
   }
 
   .catalog-item-stars {
     align-self: flex-end;
+    display: block;
+    margin-right: -2px;
   }
 
   .catalog-item-rating {
     background-color: #F2F2F2;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 3px 12px;
+    padding-left: 15px;
 
    
   }
