@@ -91,7 +91,10 @@
         <h2>Заинтересовались?</h2>
         <p class="searching-info">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="button start-searching-button" type="button">Поиск гостиницы в Седоне</button>
-        <img src="img/map.png" width="1200" height="594" alt="Карта Седоны">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61959.560286083455!2d-111.79101805161591!3d34.87385066729933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1592397685076!5m2!1sru!2sru" width="1200" height="594" allowfullscreen title="Карта Седоны"></iframe>
+        <!-- 
+           <img src="img/map.png" width="1200" height="594" alt="Карта Седоны">
+        -->    
       </section>
     </main>
     <footer class="main-footer footer-filter">
@@ -136,19 +139,47 @@
         <p class="searching-item">
         <label for="check-in-date">Дата заезда:</label>
          <input id="check-in-date" type="text" name="date-in" value="24 апреля 2017">
+         <button class="button calendar" type="button">
+         <span class="visually-hidden">Календарь</span>
+          <svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z"/></svg>
+        </button>
       </p>
        <p class="searching-item">
         <label for="check-out-date">Дата выезда:</label>
         <input class="calender" id="check-out-date" type="text" name="date-out" value="4 июля 2017">
+        <button class="button calendar" type="button">
+          <span class="visually-hidden">Календарь</span>
+           <svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z"/></svg>
+         </button>
        </p>
        <div class="searching-item guests-amount">
        <p class="searching-item-guests">
          <label class="adults" for="adults-amount">Взрослые:</label>
-         <input id="adults-amount" type="text" name="adults-amount" value="2">
+         <button class="quantity-arrow quantity-arrow-minus"> 
+          <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="12" height="3"/>
+          </svg>
+         </button>
+         <input class="adults-input" id="adults-amount" type="number" name="adults-amount" value="2">
+         <button class="quantity-arrow quantity-arrow-plus"> 
+          <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/>
+          </svg>
+         </button>
        </p>
        <p class="searching-item-guests">
         <label class="kids" for="kids-amount">Дети:</label>
-        <input id="kids-amount" type="text" name="kids-amount" value="0">
+        <button class="quantity-arrow quantity-arrow-minus">
+          <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="12" height="3"/>
+          </svg>
+          </button>
+        <input class="kids-input" id="kids-amount" type="number" name="kids-amount" value="0">
+        <button class="quantity-arrow quantity-arrow-plus">
+          <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/>
+          </svg>
+        </button>
       </p>
     </div>
       <button class="button submit-searching-button" type="submit">Найти</button>
