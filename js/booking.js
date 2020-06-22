@@ -21,16 +21,24 @@ bookingPopup.classList.add("modal-hide");
 bookingLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     bookingPopup.classList.toggle("modal-hide");
+
+    if (bookingPopup.classList.contains('modal-hide')) {
+        bookingPopup.classList.remove("modal-error");
+    }
+
     if (storage) {
         bookingAdults.value = storage;
         bookingKids.value = storage;
-      }
+    }
     bookingCheckin.focus();
 });
 
 bookingForm.addEventListener("submit", function (evt) {
     if (!bookingCheckin.value || !bookingCheckout.value || !bookingAdults.value || !bookingKids.value)  {
         evt.preventDefault();
+        bookingPopup.classList.remove("modal-error");
+        bookingPopup.offsetWidth = bookingPopup.offsetWidth;
+        bookingPopup.classList.add("modal-error");
       }
     else {
         if (isStorageSupport) { 
@@ -45,6 +53,7 @@ window.addEventListener("keydown", function (evt) {
         if (!bookingPopup.classList.contains("modal-hide")) {
             evt.preventDefault();
             bookingPopup.classList.add("modal-hide");
+            bookingPopup.classList.remove("modal-error");
           }
         }
       });

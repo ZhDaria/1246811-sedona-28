@@ -318,7 +318,7 @@ html {
     line-height: 24px;
     text-align: center;
     margin: 0;
-    margin-top: 59px;
+    margin-top: 58px;
   }
 
   .searching-info {
@@ -365,14 +365,30 @@ html {
     color: rgba(255, 255, 255, 0.3);
   }
 
-  .hotel-searching img {
+  .map-wrapper {
+    position: relative;
+    height: 594px;
+    margin-bottom: -120px;
+  }
+
+  .hotel-searching .map {
     margin: 0;
-    margin-bottom: -126px;
+    margin-bottom: -120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 594px;
+  
   }
 
   .hotel-searching iframe {
     border: none;
-    margin-bottom: -126px;
+    margin-bottom: -120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
   }
 
   .modal {
@@ -383,11 +399,16 @@ html {
     top: 233px;
     animation: expandDown 0.3s;
     transform-origin: top center;
+    z-index: 3;
     
   }
 
   .modal-hide {
     display: none;
+  }
+
+  .modal-error {
+    animation: shake 0.6s;
   }
 
   .searching-form {
@@ -1136,3 +1157,24 @@ html {
     }
   }
 
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(10px);
+    }
+  }
