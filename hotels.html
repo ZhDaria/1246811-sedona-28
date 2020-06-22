@@ -65,12 +65,18 @@
             <legend class="filter-title">Стоимость в сутки (Р):</legend>
             <div class="range-filter">
               <div class="price-controls">
-                <table class="price">
+                <label class="min-price">
+                  от <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="number" name="max-price" value="3000">
+                </label>
+                <!--<table class="price">
                   <tr>
                     <td>от 0</td>
                     <td>до 3000</td>
                   </tr>
-                </table>
+                </table>-->
               </div>
               <div class="range-controls">
                 <div class="scale">
@@ -216,7 +222,7 @@
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <p>#visitsedona</p>
-        <p>тел: +7(495) 666-01-66</p>
+        <a href="tel:+74936660166">тел: +7(495) 666-01-66</a>
       </section>
       <section class="footer-social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>

@@ -62,7 +62,7 @@ html {
   }
 
 .main-header {
-    height: 56px;
+    min-height: 56px;
   }
 
 .main-header-logo {
@@ -92,6 +92,8 @@ html {
     padding: 0;
     padding-left: 72px;
     padding-right: 72px;
+    padding-top: 15px;
+    padding-bottom: 16px;
     height: 100%;
 
   }
@@ -177,11 +179,29 @@ html {
     margin: 0;
     margin-top: 51px;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .features-item {
     text-align: center;
     padding: 0;
+  }
+
+  .features-item:nth-child(-n+2) {
+    width: 100%;
+  }
+
+  .features-item:nth-child(n+3) {
+    width: 400px;
+    color: var(--basic-black);
+    background-color: var(--basic-beige);
+    padding: 45px;
+    padding-bottom: 30px;
+    padding-top: 47px;
+    box-sizing: border-box;
   }
 
   .features-item h3 {
@@ -191,7 +211,7 @@ html {
     width: 149.5px;
     padding: 0;
     margin: 0 auto;
-    margin-bottom: 26px;
+    margin-bottom: 25px;
   }
 
   .features-item p {
@@ -287,24 +307,8 @@ html {
     order: -1;
   }
 
-  .feature-345-wrapper {
-    color: var(--basic-black);
-    background-color: var(--basic-beige);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px;
-    padding: 0 10px;
-   
-  }
-
-  .feature-345-wrapper .features-item {
-    padding: 45px;
-    padding-top: 48px;
-    padding-bottom: 32px;
-  }
-
-  .feature-345-wrapper p {
-    padding-bottom: 22px;
+  .hotel-searching {
+    position: relative;
   }
 
 
@@ -336,19 +340,19 @@ html {
     border: none;
     background-color: transparent;
     outline: none;
+    cursor: pointer;
   }
 
   .start-searching-button {
-    display: block;
     background-color: var(--basic-brown);
     font-size: 21px;
     line-height: 26px;
-    margin: 0 auto;
+    margin: 0;
+    margin-left: 316px;
     padding-top: 31px;
     padding-right: 140px;
     padding-bottom: 29px;
     padding-left: 140px;
-    position: relative;
   }
 
   .start-searching-button:hover,
@@ -368,15 +372,22 @@ html {
 
   .hotel-searching iframe {
     border: none;
+    margin-bottom: -126px;
   }
 
   .modal {
+    display: block;
     width: 568px;
     position: absolute;
-    left: 356px;
-    right: 0;
-    top: 2169px;
-    bottom: 0;
+    left: 316px;
+    top: 233px;
+    animation: expandDown 0.3s;
+    transform-origin: top center;
+    
+  }
+
+  .modal-hide {
+    display: none;
   }
 
   .searching-form {
@@ -480,6 +491,7 @@ html {
 }
   
   .quantity-arrow {
+    display: block;
     position: absolute;
     border: none;
     cursor: pointer;
@@ -489,6 +501,7 @@ html {
     height: 38px;
     padding: 0;
   }
+
 
   .adults + .quantity-arrow-minus {
     top: -1px;
@@ -510,11 +523,18 @@ html {
     left: 143px;
   }
 
-
-
-
   .quantity-arrow svg {
     fill: #a9a9a9;
+  }
+
+  .quantity-arrow-minus svg {
+    padding-top: 18px;
+    padding-left: 13px;
+  }
+
+  .quantity-arrow-plus svg {
+    padding-top: 11px;
+    padding-left: 14px;
   }
 
   .quantity-arrow:hover svg {
@@ -550,6 +570,7 @@ html {
 .main-footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    z-index: 10;
 }
 
 .footer-filter {
@@ -571,6 +592,10 @@ html {
   .footer-contacts p {
     margin: 0;
     padding-bottom: 9px;
+  }
+  
+  .footer-contacts a {
+    color: var(--basic-black);
   }
 
 
@@ -759,6 +784,39 @@ html {
     margin-top: 10.5px;
   }
 
+  .price-controls {
+    border: 2px solid #FFFFFF;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    display: flex;
+    padding-top: 4px;
+    padding-bottom: 5px;
+  
+  }
+  .price-controls label {
+    width: 154px;
+    padding-left: 65px;
+    
+  }
+
+  .min-price {
+    border-right: 2px solid #FFFFFF;
+    
+  }
+
+
+  
+  .price-controls input {
+    width: 60px;
+    color: inherit;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+  }
+
+  /*
   .price-controls table {
     width: 100%;
     border: 2px solid #FFFFFF;
@@ -778,6 +836,7 @@ html {
     border-left: 2px solid var(--basic-white);
     padding-left: 2px;
   }
+  */
 
   .range-controls {
     position: relative;
@@ -1065,3 +1124,15 @@ html {
     padding: 3px 12px;
     padding-left: 15px;   
   }
+
+
+  @keyframes expandDown {
+    0% {
+    transform: scaleY(0);
+    }
+
+    100% {
+    transform: scaleY(1);
+    }
+  }
+
