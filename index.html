@@ -5,13 +5,13 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:wght@400;700&display=swap">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-nav">
         <a class="main-header-logo"> 
-          <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип Седона">
+          <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип города Седона">
         </a>
         <ul class="main-nav-list">
           <li class="main-nav-item"><a href="blank.html">Информация</a></li>
@@ -25,7 +25,7 @@
       <h1 class="visually-hidden">Город Седона</h1>
       <section class="intro">
         <h2 class="visually-hidden">Intro</h2>
-         <img src="img/welcome.svg" width="456.65" height="350.88" alt="Welcome to Sedona">
+         <img src="img/welcome.svg" width="456" height="351" alt="Приветствие">
       </section>
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -94,6 +94,7 @@
         <p class="map"><img src="img/map.png" width="1200" height="594" alt="Карта Седоны"></p>
       </div>
         <section class="modal">
+          <h2 class="visually-hidden">Форма поиска гостиницы</h2>
           <form class="searching-form" action="https://echo.htmlacademy.ru" method="GET">
             <p class="searching-item">
             <label for="check-in-date">Дата заезда:</label>
@@ -157,25 +158,26 @@
         <ul class="social-list">
           <li class="social-item">
             <a class="social-button twitter-button" href="blank.html">
-              <span class="visually-hidden">Twitter</span>
+              <span class="visually-hidden">Ссылка на Twitter</span>
               <svg width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.95 1.144c1.685-.496 2.984.27 3.577 1.18.673-.232 1.331-.482 2.011-.709a2.345 2.345 0 01-.857 1.768c.685.17 1.304-.49 1.304-.49-.169 1-1.006 1.787-1.563 2.023-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.12C1.705 9.246.374 8.53.448 6.33c.285.328 1.067.536 1.34.472-.703-.24-1.97-3.36-.894-4.952 1.818 1.854 3.735 3.606 7.152 3.773.208-2.293 1.137-3.83 2.904-4.479z" fill="#fff"/></svg>
             </a>
           </li>
           <li class="social-item">
             <a class="social-button facebook-button" href="blank.html">
-              <span class="visually-hidden">Facebook</span>
+              <span class="visually-hidden">Ссылка на Facebook</span>
               <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff"/></svg>
             </a>
           </li>
           <li class="social-item">
             <a class="social-button youtube-button" href="blank.html">
-              <span class="visually-hidden">Youtube</span>
+              <span class="visually-hidden">Ссылка на Youtube</span>
               <svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h14c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3zm3.027 4.002v7.996L15.014 8 6.027 4.002z" fill="#fff"/></svg>
             </a>
           </li>
         </ul>
       </section>
       <section class="footer-copyright">
+        <h2 class="visually-hidden">Контактная информация</h2>
         <p>Website by</p>
         <a class="copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="visually-hidden">HTML Академия</span>
@@ -183,6 +185,6 @@
         </a>
       </section>
     </footer>
-    <script src="js/booking.js"></script>
+    <script src="js/booking.min.js"></script>
   </body>
 </html>
